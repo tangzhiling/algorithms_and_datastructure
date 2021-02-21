@@ -90,6 +90,29 @@ def dfs(node, visited):
             dfs(next_node, visited)
 ```
 
+### DFS - 非递归写法模版 
+``` python
+def dfs(self, tree): 
+    if tree.root is None: 
+        return[] 
+    
+    visited, stack =[], [tree.root]
+    
+    while stack: 
+        node =stack.pop() 
+        visited.add(node)
+        
+        process (node) 
+        nodes = generate_related_nodes(node) 
+        stack.push(nodes) 
+        
+    # other processing work 
+    ...
+    
+```
+
+
+
 ### BFS 代码模版 
 ``` python
 def BFS(graph, start, end):
