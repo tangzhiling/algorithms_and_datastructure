@@ -11,10 +11,10 @@
 
 用动态规划解这些题的基本步骤一般是：
 
-- 1. 找到重复子问题：例如 problem(i, j) = min(sub(i+1, j), sub(i+1, j+1)) + a[i,j]
+- 1.找到重复子问题：例如 problem(i, j) = min(sub(i+1, j), sub(i+1, j+1)) + a[i,j]
 
 
-- 2. 定义状态数组：例如 f[i,j]
+- 2.定义状态数组：例如 f[i,j]
 
 
-- 3. 写出DP方程：例如 f[i,j] = min(f[i+1, j], f[i+1, j+1]) + a[i,j]
+- 3.写出DP方程：例如 f[i,j] = min(f[i+1, j], f[i+1, j+1]) + a[i,j]
