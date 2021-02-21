@@ -23,7 +23,7 @@ for i = 0; i <= n; ++i {
     for j = 0; j <= m; ++j {
         ...
         
-        d[i][j] = min{dp[i-1][j], dp[i][j-1], etc};  
+        dp[i][j] = min{dp[i-1][j], dp[i][j-1], etc};  
     }
 }
 
